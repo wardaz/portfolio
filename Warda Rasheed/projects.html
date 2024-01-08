@@ -1,0 +1,165 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <title>Projects</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="./imgs/logo1.png" class="logo" alt="" />
+        <ul id="sidemenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1hnIxoQDlhlP6bofE8ATZuP4po7bvoFD0/view"
+              >Resume</a
+            >
+          </li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="bi bi-x" onclick="closemenu()"></i>
+        </ul>
+        <i class="bi bi-list" onclick="openmenu()"></i>
+      </nav>
+    </div>
+
+    <section id="portfolio">
+      <div class="portfolio">
+        <div class="proj-heading">
+          <h1>Portfolio</h1>
+        </div>
+        <div class="portfolio-content container">
+          <div class="proj">
+            <img class="img-fluid" src="./imgs/Screenshot (190).png" />
+            <div class="proj1-details px-5">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-sass"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-react"></i>
+              <i class="fab fa-git"></i>
+              <i class="fab fa-github"></i>
+              <h2>NFT Marketplace</h2>
+              <p>
+                Pixel Axe NFT Marketplace is designed for buying and selling
+                NFTs.
+              </p>
+              <button>
+                <a href="https://github.com/wardaz/React" target="_blank">
+                  Source Code
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://pixelaxe-marketplace.netlify.app/"
+                  target="_blank"
+                >
+                  Demo
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="proj pt-5">
+            <img class="img-fluid" src="./imgs/Screenshot (192).png" />
+            <div class="proj1-details px-5">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-git"></i>
+              <i class="fab fa-github"></i>
+
+              <h2>Kaasib Web</h2>
+              <p>Kaasib Web, a job portal!</p>
+              <button>
+                <a href="https://github.com/wardaz/Kaasib" target="_blank">
+                  Source Code
+                </a>
+              </button>
+              <button>
+                <a href="https://kaasib.netlify.app/" target="_blank"> Demo </a>
+              </button>
+            </div>
+          </div>
+          <div class="proj pt-5">
+            <img class="img-fluid" src="./imgs/Screenshot (191).png" />
+            <div class="proj1-details px-5">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-git"></i>
+              <i class="fab fa-github"></i>
+              <h2>E-commerce Website</h2>
+              <p>
+                E-commerce website is designed for buying and selling things
+              </p>
+              <button>
+                <a
+                  href="https://github.com/wardaz/E-commerce-Website-"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://app.netlify.com/sites/bootstrap-pg/overview"
+                  target="_blank"
+                >
+                  Demo
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <div id="contact">
+      <h1>Contact</h1>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h3 class="sub-title">Contact Me</h3>
+            <p><i class="bi bi-envelope"></i> warda.capricon11@gmail.com</p>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" />
+              <input type="email" name="email" placeholder="Your Email" />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" id="btn">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright <i class="bi bi-c-circle"></i> Designed by Warda Rasheed</p>
+    </div>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="./imgs/favicon.png" type="image/x-icon" />
+    <title>Warda Rasheed</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="./imgs/logo1.png" class="logo" alt="" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1hnIxoQDlhlP6bofE8ATZuP4po7bvoFD0/view"
+              >Resume</a
+            >
+          </li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="bi bi-x" onclick="closemenu()"></i>
+        </ul>
+        <i class="bi bi-list" onclick="openmenu()"></i>
+      </nav>
+    </div>
+    <div id="header">
+      <div class="container">
+        <div class="row">
+          <div class="header-text">
+            <div class="col-lg-8 col-md-6">
+              <p><b>Web Developer</b></p>
+              <h1>
+                Computer Science graduate from Women's University Multan, with a
+                <br />
+                strong commitment to continuous learning and contributing to
+                the<br />
+                field of web development. Currently, gaining hands-on
+                experience<br />
+                as a trainee at Game Train, building on my previous
+                fellowship<br />
+                at Bytewise Islamabad. My passion lies in absorbing knowledge<br />
+                from dynamic institutes and sharing it with others to foster<br />
+                growth and innovation.
+              </h1>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/hafsa.zaeem"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/wonderellous/"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="https://twitter.com/WardaRasheed11"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/wardarasheed"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a href="https://github.com/wardaz"
+                  ><i class="bi bi-github"></i
+                ></a>
+                <a href="https://medium.com/@warda.capricon11"
+                  ><i class="bi bi-medium"></i
+                ></a>
+              </div>
+            </div>
+            <!-- //col -->
+          </div>
+          <!-- //header-text -->
+
+          <div class="header-image d-flex justify-content-end">
+            <div class="col-lg-4 col-md-6">
+              <img src="./imgs/warda7.jpeg" alt="" />
+            </div>
+            <!-- //col -->
+          </div>
+        </div>
+        <!-- //row -->
+      </div>
+      <!-- // container-fluid -->
+    </div>
+
+    <!-- about -->
+    <div id="about">
+      <h1>About Me</h1>
+      <div class="container">
+        <div class="row">
+          <div class="about-left">
+            <img src="./imgs/warda2.jpeg" alt="img" />
+          </div>
+          <div class="about-right">
+            <span>Name: Warda Rasheed</span>
+            <span>Age: 22</span><br />
+            <span>Email: warda.capricon11@gmail.com</span>
+            <span>Education: The Women University Multan</span><br />
+            <span>Degree: Bachelors in Computer Science</span>
+            <span>Address: Multan,Pakistan</span>
+
+            <div class="logimg">
+              <h3 style="padding: 12% 0% 0% 0%">Companies I've worked with</h3>
+              <span
+                ><img
+                  src="https://res.cloudinary.com/generation/image/upload/w_200,h_150,c_fit/pakistan/2021/08/Game-Train-Logo.png"
+                  alt=""
+                  height="100px"
+                  width="130px"
+              /></span>
+              <span
+                ><img
+                  src="https://miro.medium.com/max/2400/1*Dyko8oRxeFj0-X5y4L8uiQ.png"
+                  alt=""
+                  height="170px"
+                  width="180px"
+              /></span>
+              <span
+                ><img
+                  src="https://www.pngfind.com/pngs/m/3-37862_circle-logo-circle-women-logo-hd-png-download.png"
+                  alt=""
+                  height="100px"
+                  width="150px"
+              /></span>
+              <span
+                ><img
+                  src="https://www.bytewiseltd.com/assets/img/grey.png"
+                  alt=""
+                  height="80px"
+                  width="200px"
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+      <h1>Contact</h1>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h3 class="sub-title">Contact Me</h3>
+            <p><i class="bi bi-envelope"></i> warda.capricon11@gmail.com</p>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" />
+              <input type="email" name="email" placeholder="Your Email" />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" id="btn">submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright <i class="bi bi-c-circle"></i> Designed by Warda Rasheed</p>
+    </div>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
